@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SIUPT</string>
+    <string name="logout">Terminar Sessão</string>
+    <string name="login">Entrar</string>
+    <string name="username">Nome do Utilizador</string>
+    <string name="password">Palavra-passe</string>
+    <string name="listaUc">Lista de UCs</string>
+    <string name="schedule">Horário</string>
+</resources>
