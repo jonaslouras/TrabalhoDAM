@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity {
     String user;
     EditText txtPass;
     String pass;
-
-    String url = "http://alunos.upt.pt/~abilioc/dam.php?func=auth&login="+textViewLogin+"&password="+textViewPass;
+    String url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +44,14 @@ public class MainActivity extends AppCompatActivity {
         Button btnLogin = (Button) findViewById(R.id.buttonLogin); //seleciona o botão de login
         btnLogin.setOnClickListener(this::login); //chama função de login
 
+        url = "http://alunos.upt.pt/~abilioc/dam.php?func=auth&login="+textViewLogin+"&password="+textViewPass;
+
+
     }
 
     public void login(View view) {
+
+        url = "http://alunos.upt.pt/~abilioc/dam.php?func=auth&login="+user+"&password="+pass;
         Intent login = new Intent(this,MenuPrincipal.class); //indicação da atividade a abrir
         startActivity(login); //abertura da atividade
     }
